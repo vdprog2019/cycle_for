@@ -1,49 +1,25 @@
+<!DOCTYPE html>
 <html>
-    
-<head>   
-    
-    <style>
-    
-        body{
-            background-color: black;
-        }
-    
-        img{
-            border: 4px solid red;
-        }
-    </style>
-    
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+
 </head>
-
 <body>
-
-    
     <script>
+    
+        //инкремент - +1 значению переменной
+        //дикремент - -1 от значения переменной
         
-       
-        
-
-        
-        var x = prompt("Введите первое значение", "1");
-        var y = prompt("Введите второе значение", "2");
-        var z = 0;
-        
-        if(x > 7 || y > 7){
-            z = 7;
-        }
-        
-        if(x < 7){
-            z = 1;
-        }
-        
-        if(y < 7){
-            z = 0;
-        }
-        
-        var sum = x - (y*y*y) - 7 - z;
-        alert(sum);
+        //i -   это итератор цикла(текущий шаг цикла)
+        for(var i=0; i < 10; i++)
+            {
+                 alert(prompt("введите ваше имя", "Толик"));
+            }
         
     </script>
 </body>
-
 </html>
