@@ -8,14 +8,22 @@
 
     <body>
         <script>
-        
+            var tmp = 1; 
           for(var i= 1 ; i < 11; i++){
-              
+                tmp=1;
               for(var j = 1; j < 11; j ++){
-                  // 1 * 1 = 1
+                  tmp=1;
+                 for(var z=1; z <= j; z++)
+                    {            
+                        tmp = tmp * i;
+                        
+                        
+                    }
                   
-                  alert(i + " * " + j + " = " + i * j);
+                alert(i + "^" + j + " = " + tmp);
+                  
               }
+              
           }
             
         </script>
