@@ -1,32 +1,30 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-
-</head>
-<body>
-    <script>
-
-        var number = prompt ("введите число");
+    <head>
+       <style>
+        </style>
         
-            if ( number == 0 ){
-                alert ("!"+number + "=" + 1);
-            }else if ( number == 1 ){
-                alert ("!"+ number + "=" + 1);
-            }
+    </head>
 
-            for(var i=1; i < number; i++){
-                
-                 alert( "!"+ number + " = " + i + " * " + (parseInt(i)+1));
 
-            }
+    <body>
+        <script>
+        
+            var number = prompt("введите число");
             
+            var numberOfDicrementions = 0;
+         
+            //цикл с пост условием
+            do{
+                numberOfDicrementions=prompt("сколько раз  дикриментировать?");
+            }while(numberOfDicrementions < 1);
             
+            do{
+                number--;    
+            }while(--numberOfDicrementions!=0);
             
-    </script>
-</body>
+                   
+                   
+            alert(number);
+        </script>
+    </body>
 </html>
