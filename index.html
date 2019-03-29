@@ -11,33 +11,62 @@
 <body>
     <script>
 
-            /* 3! = 1 * 2 * 3  */
-            
-
-        var sum = 1; 
-
-        for (var i = 1; i < 16; i++ ){
-
-            sum = 1; 
-            do{
-
-                sum = sum * i;
+        
+        /*      ФАКТОРИАЛ 1 числа
+           var sum = 1;
+        
+          for(var i=1; i <= 5; i++){
                 
+                 sum = parseInt(sum) * parseInt(i);
+            }
+        
+        alert( sum );
+        
+        */
+        
+        
+        /* факториал через do while
+        
+         var sum = 1;
+            var i = 1;
+        do{ 
+        
+             sum = parseInt(sum) * parseInt(i);
+             i++;
+            
+        }while( parseInt(i) < 6 ); 
+        
+        alert(sum);
+        
+        */
+       
+        
+        
+        for ( var j = 1; j <=15; j++ )    {
+        
+            
+            if ( j == 0  ){
+                
+                alert( parseInt(j) +  "!" + " = " + 1 );
+            }else {
 
-            }while( sum !== i ); 
+                var sum = 1;
+                var i = 1;
+                do{ 
 
-            alert( sum + "!" + " = " + sum * i ); 
+                     sum = parseInt(sum) * parseInt(i);
+                     i++;
+
+                }while( parseInt(i) < parseInt(j) ); 
 
 
-
+                alert( parseInt((j)-1) +  "!" + " = " + sum );
+            
+            }
         }
-            
-            
-
-           
-
-  
-
+        
+        
+        
     </script>
 </body>
 </html>
